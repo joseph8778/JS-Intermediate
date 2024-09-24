@@ -1,11 +1,11 @@
-function arrSum(arr) {
-// How to loop through every element in an array
+function totalFood(arr) {
+let sum = 0
 for (let i = 0; i < arr.length; ++i) {
-console.log('run this code')
+    sum = sum + arr[i]}
+    return sum
 }
 
-}
 
 
 
-console.log(arrSum([2, 2, 2]))
+console.log(totalFood([5, 6, 3, 20]))
