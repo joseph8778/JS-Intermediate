@@ -1,11 +1,17 @@
-function progressiveSum(num) {
-sum = 0
-for (let i = 1; i <= num; ++i) {
-sum = sum + i} //starts from 1, then goes to 2, then stops at 3 since 4 is greater than.
-return sum //After 4 loop is stopped, we return the new sum.
+function calcTime(time) {
+let seconds = time % 60 //Seconds
+let minutes = Math.floor(time / 60) //hours''
+
+if (minutes.toString().length === 1) {
+     minutes = '0' + minutes
+}
+
+if (seconds.toString().length === 1) {
+     seconds = '0' + seconds
 }
 
 
+return `${minutes}:${seconds}`
+}
 
-
-console.log(progressiveSum(3))
+console.log(calcTime(606));
