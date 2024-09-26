@@ -12,13 +12,11 @@ console.log(convertToZeros([1, 2, 3, 4, 5]))
 
 // MAP
 
-let arry = [1, 2, 3, 4, 5, 6, 6, 6]
+function convertZeroArray(mapArray) {
+return mapArray.map(elem => 0)
+}
 
-let convertedZeroArray = arry.map((element) => {
-    return element * 0
-})
-
-console.log(convertedZeroArray)
+console.log(convertZeroArray([1, 2, 5, 3, 5, 67, 7]))
 
 //FILL
 
