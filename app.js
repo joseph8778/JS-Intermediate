@@ -10,14 +10,12 @@ return noApples
 console.log(removeApplesForLoop(['Banana', 'Orange', 'Apple']))
 
 
-//MAP ARRAY FUNCTION
 
-let mapArray = ['Banana', 'Orange', 'Apple', "tomato", 'sausage']
 
-let noNewApples = mapArray.filter(elem => {
-    if (elem !== 'Apple') {
-        return true
-    }
-})
+//Filter ARRAY FUNCTION
 
-console.log(noNewApples)
+function noNewApples(filterArray) {
+return filterArray.filter(elem => elem !== 'Apple')
+}
+
+console.log(noNewApples(['Banana', 'Orange', 'Apple', "tomato", 'sausage']))
