@@ -1,27 +1,23 @@
-//FOR LOOP
-
-function convertToZeros(arr) {
-let zero = []
-for (let i = 0; i < arr.length; i++) {
-    zero.push(0)
-}
-return zero
-}
-
-console.log(convertToZeros([1, 2, 3, 4, 5]))
-
-// MAP
-
-function convertZeroArray(mapArray) {
-return mapArray.map(elem => 0)
+function removeApplesForLoop(forArr) {
+let noApples = []
+    for (let i = 0; i < forArr.length; i++) {
+   if (forArr[i] !== 'Apple') {
+    noApples.push(forArr[i])}
+    }
+return noApples
 }
 
-console.log(convertZeroArray([1, 2, 5, 3, 5, 67, 7]))
+console.log(removeApplesForLoop(['Banana', 'Orange', 'Apple']))
 
-//FILL
 
-function convertZeros(arg) {
-return new Array(arg.length).fill(0)
-}
+//MAP ARRAY FUNCTION
 
-console.log(convertZeros([1, 2, 4, 6]))
+let mapArray = ['Banana', 'Orange', 'Apple', "tomato", 'sausage']
+
+let noNewApples = mapArray.filter(elem => {
+    if (elem !== 'Apple') {
+        return true
+    }
+})
+
+console.log(noNewApples)
